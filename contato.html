@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <nav>
+    <h1>SafeRoute</h1>
+
+    <button id="menu-btn">Menu</button>
+
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contato.html">Contato</a></li>
+      <li><a href="integrantes.html">Integrantes</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main class="contato-container">
+
+  <div class="contato-texto">
+
+    <h2>Contato</h2>
+
+    <form id="form">
+
+      <input
+        type="text"
+        id="nome"
+        placeholder="Seu nome"
+        required
+      >
+
+      <input
+        type="email"
+        id="email"
+        placeholder="Seu email"
+        required
+      >
+
+      <select id="motivo" required>
+        <option value="">Selecione o motivo do contato</option>
+        <option value="duvida">Dúvida</option>
+        <option value="suporte">Suporte</option>
+        <option value="feedback">Feedback</option>
+        <option value="parceria">Parceria</option>
+        <option value="outro">Outro</option>
+      </select>
+
+      <textarea
+        id="mensagem"
+        placeholder="Digite sua mensagem"
+        required
+      ></textarea>
+
+      <button type="submit">Enviar</button>
+
+      <button type="reset" id="resetar">Resetar</button>
+
+      <p id="feedback"></p>
+
+    </form>
+
+  </div>
+
+  <div class="hero-contato-card">
+
+    <img
+    src="img/imagem-de-contato.png"
+    alt="Imagem contato"
+    class="hero-contato">
+
+  </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
