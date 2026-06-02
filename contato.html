@@ -1,92 +1,105 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contato</title>
-    <link href="https://fonts.google.com/share?selection.family=Roboto:ital,wght@0,100..900;1,100..900 " rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+    <title>Contato - SafeRoute</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
-  <nav>
-    <h1>SafeRoute</h1>
+    <nav>
 
-    <button id="menu-btn">Menu</button>
+        <div class="logo">
+            SafeRoute
+        </div>
 
-    <ul id="menu">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="sobre.html">Sobre</a></li>
-      <li><a href="faq.html">FAQ</a></li>
-      <li><a href="contato.html">Contato</a></li>
-      <li><a href="integrantes.html">Integrantes</a></li>
-    </ul>
-  </nav>
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+        </ul>
+
+    </nav>
 </header>
 
 <main class="contato-container">
 
-  <div class="contato-texto">
+    <div class="contato-texto">
 
-    <h2>Contato</h2>
+        <h2>Entre em Contato</h2>
 
-    <form id="form">
+        <form id="form">
 
-      <input
-        type="text"
-        id="nome"
-        placeholder="Seu nome"
-        required
-      >
+            <input
+                type="text"
+                id="nome"
+                placeholder="Seu nome"
+                required
+            >
 
-      <input
-        type="email"
-        id="email"
-        placeholder="Seu email"
-        required
-      >
+            <input
+                type="email"
+                id="email"
+                placeholder="Seu e-mail"
+                required
+            >
 
-      <select id="motivo" required>
-        <option value="">Selecione o motivo do contato</option>
-        <option value="duvida">Dúvida</option>
-        <option value="suporte">Suporte</option>
-        <option value="feedback">Feedback</option>
-        <option value="parceria">Parceria</option>
-        <option value="outro">Outro</option>
-      </select>
+            <select id="motivo" required>
+                <option value="">Selecione o motivo do contato</option>
+                <option value="duvida">Dúvida</option>
+                <option value="suporte">Suporte</option>
+                <option value="feedback">Feedback</option>
+                <option value="parceria">Parceria</option>
+                <option value="outro">Outro</option>
+            </select>
 
-      <textarea
-        id="mensagem"
-        placeholder="Digite sua mensagem"
-        required
-      ></textarea>
+            <textarea
+                id="mensagem"
+                placeholder="Digite sua mensagem"
+                required
+            ></textarea>
 
-      <button type="submit">Enviar</button>
+            <button type="submit">
+                Enviar
+            </button>
 
-      <button type="reset" id="resetar">Resetar</button>
+            <button type="reset" id="resetar">
+                Limpar Formulário
+            </button>
 
-      <p id="feedback"></p>
+            <p id="feedback"></p>
 
-    </form>
+        </form>
 
-  </div>
+    </div>
 
-  <div class="hero-contato-card">
+    <div class="hero-contato-card">
 
-    <img
-    src="img/imagem-de-contato.png"
-    alt="Imagem contato"
-    class="hero-contato">
+        <img
+            src="img/imagem-de-contato.png"
+            alt="Imagem de contato"
+            class="hero-contato"
+        >
 
-  </div>
+    </div>
 
 </main>
 
 <footer>
-  <p>SafeRoute © 2026 - Tecnologia para cidades mais seguras.</p>
+    <p>SafeRoute © 2026 - Tecnologia para cidades mais seguras.</p>
 </footer>
 
 <script src="script.js"></script>
