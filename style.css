@@ -63,3 +63,20 @@ body::after{
         rgba(255,255,255,.03) 100%
     );
 }
+
+header{
+    background:rgba(0,0,0,.75);
+    backdrop-filter:blur(10px);
+    width: 100%;  
+}
+
+nav{
+    max-width: 1400px;
+    margin: auto;
+    padding: 20px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
