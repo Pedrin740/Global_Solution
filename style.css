@@ -91,3 +91,21 @@ h1{
    color: #d10000;
    margin: 0; 
 }
+#menu{
+    display:flex;
+    list-style:none;
+    gap:15px;
+    flex-wrap:wrap;
+}
+ 
+#menu li a{
+    color:#fff;
+    text-decoration:none;
+    padding:12px 18px;
+    border-radius:8px;
+    transition:.3s;
+}
+ 
+#menu li a:hover{
+    background:#d10000;
+}
