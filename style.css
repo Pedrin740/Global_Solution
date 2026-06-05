@@ -109,3 +109,18 @@ h1{
 #menu li a:hover{
     background:#d10000;
 }
+h2{
+    text-align:center;
+    color:#d10000;
+    margin-bottom:25px;
+    font-size:2.3rem;
+}
+ 
+h3{
+    color:#ffffff;
+    margin-bottom:15px;
+}
+ 
+p{
+    color:#ffffff;
+}
