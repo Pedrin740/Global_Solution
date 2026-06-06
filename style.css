@@ -151,3 +151,45 @@ main{
     margin-top:50px;
     box-shadow:0 10px 30px rgba(0,0,0,.5);
 }
+.funcionalidades{
+    padding:80px 8%;
+}
+ 
+.titulo-funcionalidades{
+    text-align:center;
+    font-size:2.8rem;
+    color:#d10000;
+    margin-bottom:50px;
+}
+ 
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:25px;
+}
+ 
+.card{
+    background:rgba(10,10,10,.70);
+    backdrop-filter:blur(8px);
+    padding:25px;
+    border-radius:15px;
+    border-top:5px solid #d10000;
+    box-shadow:0 10px 25px rgba(0,0,0,.5);
+    transition:.3s;
+}
+ 
+.card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(209,0,0,.25);
+}
+ 
+.card h3{
+    color:#d10000;
+    margin-bottom:12px;
+    font-size:1.3rem;
+}
+ 
+.card p{
+    color:#fff;
+    line-height:1.6;
+}
