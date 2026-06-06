@@ -228,3 +228,57 @@ main{
 .faq-item p{
     color:#fff;
 }
+
+.contato-container{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:50px;
+    flex-wrap:wrap;
+}
+ 
+.contato-texto{
+    flex:1;
+    min-width:320px;
+}
+ 
+.contato-texto form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+ 
+.contato-texto input,
+.contato-texto select,
+.contato-texto textarea{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:#1a1a1a;
+    color:#fff;
+}
+ 
+.contato-texto textarea{
+    min-height:150px;
+    resize:none;
+}
+ 
+.contato-texto button{
+    background:#d10000;
+    color:#fff;
+    border:none;
+    padding:15px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+ 
+.contato-texto button:hover{
+    background:#900000;
+}
+ 
+.hero-contato{
+    max-width:450px;
+    width:100%;
+}
