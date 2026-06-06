@@ -208,3 +208,23 @@ main{
     transform:translateY(-10px);
     box-shadow:0 15px 35px rgba(209,0,0,.25);
 }
+
+.faq-item{
+    background:rgba(10,10,10,.70);
+    backdrop-filter:blur(8px);
+    margin:20px auto;
+    max-width:1000px;
+    padding:25px;
+    border-radius:15px;
+    border-left:6px solid #d10000;
+    box-shadow:0 10px 25px rgba(0,0,0,.5);
+}
+ 
+.faq-item h3{
+    color:#d10000;
+    margin-bottom:10px;
+}
+ 
+.faq-item p{
+    color:#fff;
+}
