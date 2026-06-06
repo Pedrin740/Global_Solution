@@ -193,3 +193,18 @@ main{
     color:#fff;
     line-height:1.6;
 }
+
+.info-card,
+.diferencial,
+.faq-item,
+.integrante-card{
+    transition:.3s;
+}
+ 
+.info-card:hover,
+.diferencial:hover,
+.faq-item:hover,
+.integrante-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 15px 35px rgba(209,0,0,.25);
+}
