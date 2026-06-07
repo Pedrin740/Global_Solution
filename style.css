@@ -83,7 +83,7 @@ nav{
 
 .logo{
     color: #d10000;
-    font-size: 2.5 rem;
+    font-size: 2.5rem;
     font-weight: bold;
 }
 
@@ -157,9 +157,10 @@ main{
  
 .titulo-funcionalidades{
     text-align:center;
-    font-size:2.8rem;
     color:#d10000;
     margin-bottom:50px;
+    font-size:clamp(1.8rem, 6vw, 2.8rem);
+    white-space:nowrap;
 }
  
 .cards{
@@ -346,92 +347,56 @@ footer{
 @media(max-width:992px){
 
     nav{
-
         flex-direction:column;
-
         text-align:center;
-
     }
- 
-    #menu{
 
+    #menu{
+        display:flex;
         justify-content:center;
-
+        flex-wrap:wrap;
+        gap:15px;
     }
 
 }
- 
+
 @media(max-width:768px){
- 
+
     h2{
-
         font-size:1.8rem;
-
     }
- 
+
+    .titulo-funcionalidades{
+        font-size:1.9rem;
+        white-space:nowrap;
+    }
+
     .contato-container{
-
         flex-direction:column;
-
     }
- 
+
     .cards{
-
         grid-template-columns:1fr;
-
     }
- 
+
     #menu{
-
-        flex-direction:column;
-
+        display:flex;
+        flex-direction:row;
+        justify-content:center;
+        align-items:center;
+        flex-wrap:wrap;
+        gap:10px;
         width:100%;
-
     }
- 
+
     #menu li{
-
-        width:100%;
-
+        width:auto;
     }
- 
+
     #menu li a{
-
-        display:block;
-
+        display:inline-block;
         text-align:center;
-
+        padding:10px 15px;
     }
 
 }
- 
-@media(max-width:480px){
- 
-    main{
-
-        padding:30px 5%;
-
-    }
- 
-    .card,
-
-    .faq-item,
-
-    .info-card,
-
-    .integrante-card{
-
-        padding:20px;
-
-    }
- 
-    .integrante-foto{
-
-        width:140px;
-
-        height:140px;
-
-    }
-
-}
- 
