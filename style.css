@@ -165,8 +165,10 @@ main{
  
 .cards{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    grid-template-columns:repeat(3, 1fr);
     gap:25px;
+    max-width:1200px;
+    margin:0 auto;
 }
  
 .card{
@@ -343,6 +345,252 @@ footer{
     margin-top:50px;
 
 }
+
+/* ===================================
+   PÃGINAS DE SOLUÃ‡ÃƒO
+=================================== */
+
+/* HERO MAPA */
+
+.hero{
+    max-width:1200px;
+    margin:40px auto;
+    text-align:center;
+    background:rgba(10,10,10,.70);
+    backdrop-filter:blur(8px);
+    border-left:6px solid #d10000;
+    border-radius:15px;
+    padding:50px 35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.hero p{
+    max-width:800px;
+    margin:0 auto 25px;
+}
+
+.btnMapa,
+.btnTutorial,
+.btnVoltar{
+    display:inline-block;
+    background:#d10000;
+    color:#fff;
+    text-decoration:none;
+    border:none;
+    padding:14px 25px;
+    border-radius:10px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btnMapa:hover,
+.btnTutorial:hover,
+.btnVoltar:hover{
+    background:#900000;
+}
+
+/* MAPA */
+
+.mapa{
+    padding:50px 8%;
+}
+
+.containerMapa{
+    display:flex;
+    gap:25px;
+    flex-wrap:wrap;
+    align-items:flex-start;
+}
+
+#map{
+    flex:3;
+    min-height:550px;
+    border-radius:15px;
+    overflow:hidden;
+    border:2px solid #d10000;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.painelMapa{
+    flex:1;
+    min-width:280px;
+    background:rgba(10,10,10,.70);
+    backdrop-filter:blur(8px);
+    border-left:6px solid #d10000;
+    border-radius:15px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.painelMapa h3{
+    color:#d10000;
+    margin-bottom:20px;
+}
+
+.indicador{
+    display:flex;
+    justify-content:space-between;
+    margin-bottom:15px;
+    padding-bottom:10px;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+.legenda{
+    margin-top:25px;
+}
+
+.itemLegenda{
+    display:flex;
+    align-items:center;
+    gap:10px;
+    margin-top:10px;
+}
+
+.cor{
+    width:18px;
+    height:18px;
+    border-radius:50%;
+}
+
+.baixo{
+    background:green;
+}
+
+.medio{
+    background:orange;
+}
+
+.alto{
+    background:red;
+}
+
+/* ALERTAS */
+
+.alertas{
+    max-width:1200px;
+    margin:40px auto;
+    background:rgba(10,10,10,.70);
+    backdrop-filter:blur(8px);
+    border-left:6px solid #d10000;
+    border-radius:15px;
+    padding:35px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.alertas ul{
+    list-style:none;
+}
+
+.alertas li{
+    padding:12px 0;
+    border-bottom:1px solid rgba(255,255,255,.1);
+}
+
+/* FORMULÃRIO DE OCORRÃŠNCIA */
+
+.formulario{
+    max-width:900px;
+    margin:50px auto;
+    background:rgba(10,10,10,.70);
+    backdrop-filter:blur(8px);
+    border-left:6px solid #d10000;
+    border-radius:15px;
+    padding:40px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.formulario form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+.formulario input,
+.formulario select,
+.formulario textarea{
+    background:#1a1a1a;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    padding:15px;
+}
+
+.formulario button{
+    background:#d10000;
+    color:#fff;
+    border:none;
+    border-radius:10px;
+    padding:15px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.formulario button:hover{
+    background:#900000;
+}
+
+.btnTutorial{
+    margin-bottom:20px;
+}
+
+/* TUTORIAL */
+
+.tutorial{
+    max-width:1200px;
+    margin:50px auto;
+}
+
+.passo{
+    background:rgba(10,10,10,.70);
+    backdrop-filter:blur(8px);
+    border-left:6px solid #d10000;
+    border-radius:15px;
+    padding:30px;
+    margin-bottom:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.5);
+}
+
+.passo h3{
+    color:#d10000;
+}
+
+.passo img{
+    width:100%;
+    margin-top:20px;
+    border-radius:10px;
+}
+
+.voltar{
+    text-align:center;
+    margin-top:30px;
+}
+
+/* RESPONSIVO */
+
+@media(max-width:768px){
+
+    .containerMapa{
+        flex-direction:column;
+    }
+
+    #map{
+        width:100%;
+        min-height:400px;
+    }
+
+    .painelMapa{
+        width:100%;
+    }
+
+    .formulario,
+    .tutorial,
+    .alertas,
+    .hero{
+        margin:20px;
+    }
+}
+
+
  
 @media(max-width:992px){
 
@@ -356,6 +604,10 @@ footer{
         justify-content:center;
         flex-wrap:wrap;
         gap:15px;
+    }
+
+    .cards{
+        grid-template-columns:repeat(2, 1fr);
     }
 
 }

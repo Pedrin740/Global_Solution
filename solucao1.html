@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SafeRoute</title>
-
+    
     <link rel="stylesheet" href="style.css">
-
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
+
 </head>
+
 <body>
 
 <header>
     <nav>
+
         <div class="logo">
             SafeRoute
         </div>
 
         <ul id="menu">
+
             <li><a href="index.html">Home</a></li>
             <li><a href="sobre.html">Sobre</a></li>
             <li><a href="faq.html">FAQ</a></li>
@@ -26,72 +29,196 @@
             <li><a href="solucao1.html">Mapa</a></li>
             <li><a href="solucao2.html">Ocorrências</a></li>
             <li><a href="solucao3.html">Tutorial</a></li>
+
         </ul>
-        
+
     </nav>
+
 </header>
 
 <section class="hero">
-    <h2>Rotas mais seguras para você</h2>
+
+    <h2>
+        Rotas mais seguras para você
+    </h2>
 
     <p>
         Utilize dados de ocorrências urbanas para encontrar caminhos mais seguros
         e acompanhar o nível de risco das regiões da cidade.
     </p>
 
-    <button onclick="document.getElementById('map').scrollIntoView({behavior:'smooth'})">
-        Ver Mapa
+    <button
+        class="btnMapa"
+        onclick="document.getElementById('map').scrollIntoView({behavior:'smooth'})">
+
+        🗺️ Ver Mapa
+
     </button>
+
 </section>
+
+<br>
 
 <section class="cards">
 
     <div class="card">
-        <h3>Regiões Monitoradas</h3>
-        <span>127</span>
+
+        <h3>
+            Regiões Monitoradas
+        </h3>
+
+        <span>
+            127
+        </span>
+
     </div>
 
     <div class="card">
-        <h3>Ocorrências Registradas</h3>
-        <span>4.392</span>
+
+        <h3>
+            Ocorrências Registradas
+        </h3>
+
+        <span>
+            4.392
+        </span>
+
     </div>
 
     <div class="card">
-        <h3>Alertas Ativos</h3>
-        <span>23</span>
+
+        <h3>
+            Alertas Ativos
+        </h3>
+
+        <span>
+            23
+        </span>
+
     </div>
 
 </section>
+
+<!-- MAPA -->
 
 <section class="mapa">
 
-    <h2>Mapa de Risco</h2>
+    <h2>
+        Mapa de Risco
+    </h2>
 
-    <div id="map"></div>
+    <div class="containerMapa">
 
-    <div class="legenda">
-        <h3>Legenda</h3>
-        <p>🔴 Alto Risco</p>
-        <p>🟠 Médio Risco</p>
-        <p>🟢 Baixo Risco</p>
+        <!-- MAPA -->
+
+        <div id="map"></div>
+
+        <!-- PAINEL DE MONITORAMENTO -->
+
+        <div class="painelMapa">
+
+            <h3>
+                Monitoramento
+            </h3>
+
+            <div class="indicador">
+
+                <span>
+                    Ocorrências
+                </span>
+
+                <span id="totalOcorrencias">
+                    0
+                </span>
+
+            </div>
+
+            <div class="indicador">
+
+                <span>
+                    Regiões
+                </span>
+
+                <span id="totalRegioes">
+                    0
+                </span>
+
+            </div>
+
+            <div class="legenda">
+
+                <h4>
+                    Níveis de Risco
+                </h4>
+
+                <div class="itemLegenda">
+
+                    <div class="cor baixo"></div>
+
+                    <span>
+                        Baixo Risco
+                    </span>
+
+                </div>
+
+                <div class="itemLegenda">
+
+                    <div class="cor medio"></div>
+
+                    <span>
+                        Médio Risco
+                    </span>
+
+                </div>
+
+                <div class="itemLegenda">
+
+                    <div class="cor alto"></div>
+
+                    <span>
+                        Alto Risco
+                    </span>
+
+                </div>
+
+            </div>
+
+        </div>
+
     </div>
 
 </section>
 
+<!-- ALERTAS -->
+
 <section class="alertas">
 
-    <h2>Alertas Recentes</h2>
+    <h2>
+        Alertas Recentes
+    </h2>
 
     <ul>
-        <li>⚠️ Alto risco na Região Central</li>
-        <li>⚠️ Aumento de furtos na Zona Norte</li>
-        <li>⚠️ Região Sul com ocorrências recorrentes</li>
+
+        <li>
+            ⚠️ Alto risco na Região Central
+        </li>
+
+        <li>
+            ⚠️ Aumento de furtos na Zona Norte
+        </li>
+
+        <li>
+            ⚠️ Região Sul com ocorrências recorrentes
+        </li>
+
     </ul>
 
 </section>
 
 <footer>
-    <p>© 2026 SafeRoute</p>
+    <p>
+        © 2026 SafeRoute
+    </p>
 </footer>
 
 <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
