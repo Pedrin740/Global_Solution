@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Ocorrência - SafeRoute</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <nav>
+        
+        <div class="logo">
+            SafeRoute
+        </div>
+
+        <ul id="menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contato.html">Contato</a></li>
+            <li><a href="integrantes.html">Integrantes</a></li>
+            <li><a href="solucao1.html">Mapa</a></li>
+            <li><a href="solucao2.html">Ocorrências</a></li>
+            <li><a href="solucao3.html">Tutorial</a></li>
+        </ul>
+        
+    </nav>
+</header>
+
+    <section class="formulario">
+
+        <h2>Registrar Ocorrência</h2>
+
+        <a href="tutorial.html" class="btnTutorial">
+            Como pegar as coordenadas?
+        </a>
+
+        <form id="form">
+
+            <label for="tipo">
+                Tipo de Ocorrência
+            </label>
+
+            <select id="tipo" required>
+
+                <option value="">
+                    Selecione uma ocorrência
+                </option>
+
+                <optgroup label="Criminalidade">
+
+                    <option>Assalto</option>
+                    <option>Furto</option>
+                    <option>Roubo de Veículo</option>
+                    <option>Furto de Veículo</option>
+                    <option>Tentativa de Assalto</option>
+                    <option>Sequestro</option>
+                    <option>Arrastão</option>
+
+                </optgroup>
+
+                <optgroup label="Violência">
+
+                    <option>Agressão Física</option>
+                    <option>Briga Generalizada</option>
+                    <option>Violência Doméstica</option>
+                    <option>Ameaça</option>
+                    <option>Disparos de Arma de Fogo</option>
+
+                </optgroup>
+
+                <optgroup label="Atividades Suspeitas">
+
+                    <option>Movimentação Suspeita</option>
+                    <option>Veículo Suspeito</option>
+                    <option>Tentativa de Invasão</option>
+                    <option>Invasão de Residência</option>
+                    <option>Vandalismo</option>
+
+                </optgroup>
+
+                <optgroup label="Infraestrutura Urbana">
+
+                    <option>Iluminação Pública Deficiente</option>
+                    <option>Semáforo Quebrado</option>
+                    <option>Via Mal Iluminada</option>
+                    <option>Área Abandonada</option>
+
+                </optgroup>
+
+                <optgroup label="Eventos e Torcidas">
+
+                    <option>
+                        Torcida Organizada na Região
+                    </option>
+
+                    <option>
+                        Conflito Entre Torcidas
+                    </option>
+
+                    <option>
+                        Grande Aglomeração
+                    </option>
+
+                    <option>
+                        Manifestação ou Protesto
+                    </option>
+
+                    <option>
+                        Evento com Alto Fluxo de Pessoas
+                    </option>
+
+                </optgroup>
+
+                <optgroup label="Emergências">
+
+                    <option>Incêndio</option>
+                    <option>Explosão</option>
+                    <option>Acidente de Trânsito</option>
+                    <option>Desabamento</option>
+                    <option>Alagamento</option>
+
+                </optgroup>
+
+            </select>
+
+            <label for="latitude">
+                Latitude
+            </label>
+
+            <input
+                type="number"
+                id="latitude"
+                step="any"
+                placeholder="-00.000000"
+                required>
+
+            <label for="longitude">
+                Longitude
+            </label>
+
+            <input
+                type="number"
+                id="longitude"
+                step="any"
+                placeholder="-11.111111"
+                required>
+
+            <label for="descricao">
+                Descrição da Ocorrência
+            </label>
+
+            <textarea
+                id="descricao"
+                rows="5"
+                placeholder="Descreva o ocorrido..."></textarea>
+
+            <button type="submit">
+                Registrar Ocorrência
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+        <p>© 2026 SafeRoute</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
