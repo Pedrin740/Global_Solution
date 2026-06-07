@@ -565,6 +565,119 @@ footer{
     margin-top:30px;
 }
 
+.formulario button,
+.contato-texto button{
+
+    background:#d10000;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+
+    box-shadow:
+        0 5px 15px rgba(209,0,0,.20);
+
+}
+
+.formulario button:hover,
+.contato-texto button:hover{
+
+    transform:translateY(-4px);
+
+    background:#e60000;
+
+    box-shadow:
+        0 12px 25px rgba(209,0,0,.35);
+
+}
+
+.formulario button:active,
+.contato-texto button:active{
+
+    transform:translateY(-1px);
+
+}
+
+/* ==========================
+   MENU HAMBURGER
+========================== */
+
+#hamburger{
+
+    display:none;
+
+    background:none;
+
+    border:none;
+
+    color:#fff;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+}
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    nav{
+
+        position:relative;
+
+    }
+
+    #hamburger{
+
+        display:block;
+
+    }
+
+    #menu{
+
+        display:none;
+
+        flex-direction:column;
+
+        width:100%;
+
+        margin-top:15px;
+
+        background:
+            rgba(0,0,0,.95);
+
+        border-radius:10px;
+
+        padding:15px;
+
+    }
+
+    #menu.ativo{
+
+        display:flex;
+
+    }
+
+    #menu li{
+
+        width:100%;
+
+    }
+
+    #menu li a{
+
+        display:block;
+
+        width:100%;
+
+        text-align:center;
+
+    }
+
+}
+
 /* RESPONSIVO */
 
 @media(max-width:768px){
@@ -631,24 +744,50 @@ footer{
         grid-template-columns:1fr;
     }
 
+   #hamburger{
+        display:block;
+    }
+
     #menu{
-        display:flex;
-        flex-direction:row;
-        justify-content:center;
-        align-items:center;
-        flex-wrap:wrap;
-        gap:10px;
+
+        display:none;
+
+        flex-direction:column;
+
         width:100%;
+
+        background:
+            rgba(0,0,0,.95);
+
+        margin-top:15px;
+
+        border-radius:10px;
+
+        padding:15px;
+
+    }
+
+    #menu.ativo{
+
+        display:flex;
+
     }
 
     #menu li{
-        width:auto;
+
+        width:100%;
+
     }
 
     #menu li a{
-        display:inline-block;
+
+        display:block;
+
         text-align:center;
-        padding:10px 15px;
+
+        padding:12px;
+
     }
+
 
 }

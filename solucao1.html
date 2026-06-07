@@ -3,11 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SafeRoute</title>
+    <title>Mapa - SafeRoute</title>
     
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css"/>
-
 </head>
 
 <body>
@@ -16,8 +15,13 @@
     <nav>
 
         <div class="logo">
-            SafeRoute
+        SafeRoute
         </div>
+        
+        <button id="hamburger">
+            ☰
+        </button>
+
 
         <ul id="menu">
 
@@ -64,36 +68,42 @@
     <div class="card">
 
         <h3>
-            Regiões Monitoradas
+            📝 Registro Colaborativo
         </h3>
 
-        <span>
-            127
-        </span>
+        <p>
+            O SafeRoute permite que os usuários registrem ocorrências de forma
+            colaborativa, ampliando a base de informações utilizadas para a
+            análise das regiões monitoradas.
+        </p>
 
     </div>
 
     <div class="card">
 
         <h3>
-            Ocorrências Registradas
+            🗺️ Observe as Áreas Coloridas
         </h3>
 
-        <span>
-            4.392
-        </span>
+        <p>
+            O mapa utiliza uma classificação visual por cores para indicar o
+            nível de risco de cada região. Verde representa baixo risco,
+            laranja indica médio risco e vermelho sinaliza áreas críticas.
+        </p>
 
     </div>
 
     <div class="card">
 
         <h3>
-            Alertas Ativos
+            ⚠️ Mantenha-se Atento
         </h3>
 
-        <span>
-            23
-        </span>
+        <p>
+            Consulte o mapa antes de se deslocar e utilize as informações
+            apresentadas para planejar trajetos mais seguros e evitar
+            regiões com alta concentração de ocorrências.
+        </p>
 
     </div>
 
@@ -109,11 +119,7 @@
 
     <div class="containerMapa">
 
-        <!-- MAPA -->
-
         <div id="map"></div>
-
-        <!-- PAINEL DE MONITORAMENTO -->
 
         <div class="painelMapa">
 
@@ -188,8 +194,6 @@
     </div>
 
 </section>
-
-<!-- ALERTAS -->
 
 <section class="alertas">
 

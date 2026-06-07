@@ -18,11 +18,15 @@
 <body>
 
 <header>
-        <nav>
+    <nav>
         
         <div class="logo">
-            SafeRoute
+        SafeRoute
         </div>
+        
+        <button id="hamburger">
+            ☰
+        </button>
 
         <ul id="menu">
             <li><a href="index.html">Home</a></li>
@@ -34,13 +38,13 @@
             <li><a href="solucao2.html">Ocorrências</a></li>
             <li><a href="solucao3.html">Tutorial</a></li>
         </ul>
-        
+
     </nav>
 </header>
 
-<main class="contato-container">
+<main>
 
-    <div class="contato-texto">
+    <section class="formulario">
 
         <h2>Entre em Contato</h2>
 
@@ -61,16 +65,36 @@
             >
 
             <select id="motivo" required>
-                <option value="">Selecione o motivo do contato</option>
-                <option value="duvida">Dúvida</option>
-                <option value="suporte">Suporte</option>
-                <option value="feedback">Feedback</option>
-                <option value="parceria">Parceria</option>
-                <option value="outro">Outro</option>
+
+                <option value="">
+                    Selecione o motivo do contato
+                </option>
+
+                <option value="duvida">
+                    Dúvida
+                </option>
+
+                <option value="suporte">
+                    Suporte
+                </option>
+
+                <option value="feedback">
+                    Feedback
+                </option>
+
+                <option value="parceria">
+                    Parceria
+                </option>
+
+                <option value="outro">
+                    Outro
+                </option>
+
             </select>
 
             <textarea
                 id="mensagem"
+                rows="6"
                 placeholder="Digite sua mensagem"
                 required
             ></textarea>
@@ -87,22 +111,14 @@
 
         </form>
 
-    </div>
-
-    <div class="hero-contato-card">
-
-        <img
-            src="img/imagem-de-contato.png"
-            alt="Imagem de contato"
-            class="hero-contato"
-        >
-
-    </div>
+    </section>
 
 </main>
 
 <footer>
-    <p>SafeRoute © 2026 - Tecnologia para cidades mais seguras.</p>
+    <p>
+        SafeRoute © 2026 - Tecnologia para cidades mais seguras.
+    </p>
 </footer>
 
 <script src="script.js"></script>

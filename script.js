@@ -373,3 +373,132 @@ if(mapaContainer){
     );
 
 }
+    // ==========================
+    // AVISO DE PREENCHIMENTO DO FORMULÁRIO PARA O USUÁRIO
+    // ==========================
+    
+    const form = document.getElementById("form");
+    const feedback = document.getElementById("feedback");
+    
+    if (form) {
+        
+        form.addEventListener("submit", function(event) {
+            
+            // IMPEDE O ENVIO DO FORMULÁRIO INCOMPLETO
+                event.preventDefault();
+
+            // CAPTURA OS VALORES 
+                const nome = document.getElementById("nome").value.trim();
+                const email = document.getElementById("email").value.trim();
+                const motivo = document.getElementById("motivo").value;
+                const mensagem = document.getElementById("mensagem").value.trim();
+
+            // VERIFICA SE HÁ ALGUM CAMPO VAZIO
+                if (nome === "" || email === "" || motivo === "" || mensagem === "") {
+                    feedback.textContent = "⚠️ Preencha todos os campos obrigatórios.";
+                    feedback.style.color = "red";
+                    return;
+}
+
+            // MENSAGEM DE SUCESSO
+                feedback.textContent = "✅ Formulário enviado com sucesso!";
+                feedback.style.color = "green";
+  });
+}
+
+// =============================
+// BOTÕES DE ENVIO DOS FORMULÁRIOS (CONTATO E OCORRÊNCIAS) 
+// =============================
+
+document.querySelectorAll("button")
+.forEach((botao) => {
+
+    botao.addEventListener(
+        "click",
+        function(e){
+
+            const circulo =
+                document.createElement("span");
+
+            const tamanho =
+                Math.max(
+                    this.clientWidth,
+                    this.clientHeight
+                );
+
+            circulo.style.width =
+                tamanho + "px";
+
+            circulo.style.height =
+                tamanho + "px";
+
+            circulo.style.left =
+                e.offsetX - tamanho/2 + "px";
+
+            circulo.style.top =
+                e.offsetY - tamanho/2 + "px";
+
+            circulo.classList.add(
+                "ripple"
+            );
+
+            const rippleExistente =
+                this.querySelector(".ripple");
+
+            if(rippleExistente){
+
+                rippleExistente.remove();
+
+            }
+
+            this.appendChild(circulo);
+
+        }
+    );
+
+});
+
+// =============================
+// MENU HAMBURGER
+// =============================
+
+const hamburger =
+    document.getElementById(
+        "hamburger"
+    );
+
+const menu =
+    document.getElementById(
+        "menu"
+    );
+
+if(hamburger && menu){
+
+    hamburger.addEventListener(
+        "click",
+        () => {
+
+            menu.classList.toggle(
+                "ativo"
+            );
+
+            if(
+                menu.classList.contains(
+                    "ativo"
+                )
+            ){
+
+                hamburger.innerHTML =
+                    "✕";
+
+            }else{
+
+                hamburger.innerHTML =
+                    "☰";
+
+            }
+
+        }
+    );
+
+}
