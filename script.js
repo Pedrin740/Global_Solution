@@ -502,3 +502,56 @@ if(hamburger && menu){
     );
 
 }
+
+// =============================
+// VALIDAÇÃO DO FORMULÁRIO CONTATO
+// =============================
+
+const formContato =
+    document.getElementById("form");
+
+if(formContato){
+
+    formContato.addEventListener(
+        "submit",
+        (event) => {
+
+            const email =
+                document.getElementById("email")
+                .value
+                .trim();
+
+            const feedback =
+                document.getElementById(
+                    "feedback"
+                );
+
+            const regexEmail =
+                /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if(
+                !regexEmail.test(email)
+            ){
+
+                event.preventDefault();
+
+                feedback.textContent =
+                    "Informe um e-mail válido.";
+
+                feedback.style.color =
+                    "#ff4d4d";
+
+                return;
+
+            }
+
+            feedback.textContent =
+                "Mensagem enviada com sucesso!";
+
+            feedback.style.color =
+                "#00cc66";
+
+        }
+    );
+
+}

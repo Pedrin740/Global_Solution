@@ -44,74 +44,84 @@
 
 <main>
 
-    <section class="formulario">
+    <div class="contatoLayout">
 
-        <h2>Entre em Contato</h2>
+        <section class="formulario">
 
-        <form id="form">
+            <h2>Entre em Contato</h2>
 
-            <input
-                type="text"
-                id="nome"
-                placeholder="Seu nome"
-                required
-            >
+            <form id="form">
 
-            <input
-                type="email"
-                id="email"
-                placeholder="Seu e-mail"
-                required
-            >
+                <input
+                    type="text"
+                    id="nome"
+                    placeholder="Seu nome"
+                    required
+                >
 
-            <select id="motivo" required>
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Seu e-mail"
+                    required
+                >
 
-                <option value="">
-                    Selecione o motivo do contato
-                </option>
+                <select id="motivo" required>
 
-                <option value="duvida">
-                    Dúvida
-                </option>
+                    <option value="">
+                        Selecione o motivo do contato
+                    </option>
 
-                <option value="suporte">
-                    Suporte
-                </option>
+                    <option value="duvida">
+                        Dúvida
+                    </option>
 
-                <option value="feedback">
-                    Feedback
-                </option>
+                    <option value="suporte">
+                        Suporte
+                    </option>
 
-                <option value="parceria">
-                    Parceria
-                </option>
+                    <option value="feedback">
+                        Feedback
+                    </option>
 
-                <option value="outro">
-                    Outro
-                </option>
+                    <option value="parceria">
+                        Parceria
+                    </option>
 
-            </select>
+                    <option value="outro">
+                        Outro
+                    </option>
 
-            <textarea
-                id="mensagem"
-                rows="6"
-                placeholder="Digite sua mensagem"
-                required
-            ></textarea>
+                </select>
 
-            <button type="submit">
-                Enviar
-            </button>
+                <textarea
+                    id="mensagem"
+                    rows="6"
+                    placeholder="Digite sua mensagem"
+                    required
+                ></textarea>
 
-            <button type="reset" id="resetar">
-                Limpar Formulário
-            </button>
+                <button type="submit">
+                    Enviar
+                </button>
 
-            <p id="feedback"></p>
+                <button type="reset" id="resetar">
+                    Limpar Formulário
+                </button>
 
-        </form>
+                <p id="feedback"></p>
 
-    </section>
+            </form>
+
+        </section>
+
+        <div class="imagemContato">
+
+            <img src="img/imagem-contato.png" alt="Contato SafeRoute">
+
+        </div>
+
+    </div>
 
 </main>
 

@@ -346,8 +346,71 @@ footer{
 
 }
 
+/* ==========================
+   CONTATO COM IMAGEM LATERAL
+========================== */
+
+.contatoLayout{
+
+    max-width:1400px;
+
+    margin:50px auto;
+
+    padding:0 30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:40px;
+
+}
+
+.contatoLayout .formulario{
+
+    flex:2;
+
+    margin:0;
+
+}
+
+.imagemContato{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.imagemContato img{
+
+    width:200%;
+
+    max-width:450px;
+
+    height:auto;
+
+    border-radius:20px;
+
+    transition:.3s ease;
+
+}
+
+.imagemContato img:hover{
+
+    transform:scale(1.03);
+
+}
+
+
 /* ===================================
-   PÃGINAS DE SOLUÃ‡ÃƒO
+   PÃGINAS DE SOLUÇÃO
 =================================== */
 
 /* HERO MAPA */
@@ -789,5 +852,27 @@ footer{
 
     }
 
+
+}
+
+@media(max-width:992px){
+
+    .contatoLayout{
+
+        flex-direction:column;
+
+    }
+
+    .imagemContato{
+
+        order:-1;
+
+    }
+
+    .imagemContato img{
+
+        max-width:300px;
+
+    }
 
 }
